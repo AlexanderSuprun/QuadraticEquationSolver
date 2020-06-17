@@ -6,9 +6,22 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String continueStatus;
         input();
+
+        while (true) {
+            System.out.println(" ");
+            System.out.println("Решить другое уравнение? (Y/N)");
+            continueStatus = scanner.nextLine().trim().toUpperCase();
+            if (continueStatus.equals("Y")) {
+                input();
+            } else {
+                break;
+            }
+        }
     }
-    //TODO add new call after end
+
     private static void input() {
         double a, b, c;
         Scanner scanner = new Scanner(System.in);
