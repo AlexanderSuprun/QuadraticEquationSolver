@@ -51,7 +51,6 @@ public class Main {
         double D, rootX1, rootX2;
         D = b * b - 4 * a * c;
         System.out.println("D = b^2 - 4ac = " + D);
-        // TODO add steps of solution
         if (D > 0) {
             rootX1 = (-b + Math.sqrt(D)) / (2 * a);
             rootX2 = (-b - Math.sqrt(D)) / (2 * a);
