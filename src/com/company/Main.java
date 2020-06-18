@@ -3,6 +3,10 @@ package com.company;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * This app solves quadratic equations using Discriminant
+ */
+
 public class Main {
 
     public static void main(String[] args) {
@@ -22,6 +26,9 @@ public class Main {
         }
     }
 
+    /**
+     * Checks entered coefficients
+     */
     private static void input() {
         double a, b, c;
         Scanner scanner = new Scanner(System.in);
@@ -47,6 +54,12 @@ public class Main {
         }
     }
 
+    /**
+     * Calculates roots of the quadratic equation
+     * @param a coefficient a
+     * @param b coefficient b
+     * @param c coefficient c
+     */
     private static void calculateRoots(double a, double b, double c) {
         double D, rootX1, rootX2;
         D = b * b - 4 * a * c;
